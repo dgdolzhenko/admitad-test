@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  margin-right: 14px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  fill: #707070;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.link:hover,
+.link:focus {
+  outline: none;
+  fill: #000000;
+}
+
+.linkIcon {
+  width: 16px;
+  height: 16px;
+  fill: inherit;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #707070;
+}

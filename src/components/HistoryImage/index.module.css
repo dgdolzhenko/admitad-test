@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 28px;
+  width: 168px;
+}
+
+@media screen and (max-width: 540px) {
+  .imageWrapper {
+    margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .imageWrapper {
+    margin: 0 0 16px;
+  }
+}
+
+.imageWrapperEmpty {
+  height: 88px;
+  background-image: linear-gradient(to bottom, #D29EF8, #00CED6);
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+}
+
+.image {
+  width: 100%;
+}
+
+.imageHidden {
+  display: none;
+}
+
+.button {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  padding: 0;
+  border: none;
+  background: none;
+  fill: #000000;
+  opacity: 0.54;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.buttonIcon {
+  width: 18px;
+  height: 18px;
+  fill: inherit;
+}
+
+.content {
+  flex-grow: 1;
+  font-size: 22px;
+  line-height: 25px;
+  color: #707070;
+}
+
+@media screen and (max-width: 540px) {
+  .content {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.title {
+  margin: 0 0 4px;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.info {
+  margin: 0;
+}

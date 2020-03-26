@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { configureStore } from './store/store';
+import { imageSaga } from './store/sagas/image';
+import { ContentWithRouter } from './content';
+
+export class App extends React.Component {
+  public render() {
+    const store = configureStore();
+    store.runSaga(imageSaga);
+
+    return (
+      <BrowserRouter>
+        <Provider store={store}>
+          <ContentWithRouter />
+        </Provider>
+      </BrowserRouter>
+    );
+  }
 }
-
-export default App;

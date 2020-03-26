@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  margin-bottom: 30px;
+}
+
+.item:last-of-type {
+  margin-bottom: 0;
+}
+
+.info {
+  margin: 0;
+  font-size: 22px;
+  line-height: 25px;
+  color: #707070;
+}

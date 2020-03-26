@@ -1,0 +1,44 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  padding: 30px 48px;
+  width: 100%;
+  max-width: 962px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+  .pageWrapper {
+    padding: 16px 24px;
+  }
+}
+
+.layoutBlock {
+  margin-bottom: 40px;
+  border: 1px solid #707070;
+}
+
+@media screen and (max-width: 800px) {
+  .layoutBlock {
+    margin-bottom: 20px;
+  }
+}
+
+.header {
+  padding: 20px 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 68px 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    padding: 36px 16px;
+  }
+}
